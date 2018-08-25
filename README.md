@@ -14,5 +14,5 @@
 
 * I use to start the container this way:
 ```
-docker run -d -p 8888:8888 -v $(pwd):/jupyter_files marcoan/jupyter:dashboard
+docker run -d -p 8888:8888 -v $(pwd):/jupyter_files marcoan/jupyter-dashboard
 ```
