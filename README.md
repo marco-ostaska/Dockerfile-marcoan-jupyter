@@ -1,6 +1,6 @@
 # Supported tags and respective Dockerfile links
 
-* `latest`, `jupyter-5.6.0`, `dashboard`
+* `latest`, `jupyter-5.6.0`
 
 # Considerations
 
