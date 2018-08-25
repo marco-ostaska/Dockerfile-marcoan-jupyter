@@ -17,10 +17,8 @@ RUN apt update && apt install -y wget \
 
 EXPOSE 8888
 
-VOLUME "/jupyter_files"
-
 WORKDIR "/jupyter_files"
 
 CMD ["/bin/bash"]
 
-ENTRYPOINT jupyter notebook --ip="*" --allow-root --no-browser --NotebookApp.token="abcd1234"
+ENTRYPOINT jupyter notebook --ip="*" --allow-root --no-browser --NotebookApp.token=
