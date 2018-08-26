@@ -20,5 +20,3 @@ EXPOSE 8888
 WORKDIR "/jupyter_files"
 
 CMD ["/bin/bash"]
-
-ENTRYPOINT jupyter notebook --ip="*" --allow-root --no-browser --NotebookApp.token=
