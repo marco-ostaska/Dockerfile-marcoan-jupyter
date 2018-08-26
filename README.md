@@ -16,3 +16,9 @@
 ```
 docker run -d -p 8888:8888 -v $(pwd):/jupyter_files marcoan/jupyter-dashboard
 ```
+
+* Jupyter can be started like this if you don't want to use a token or a password
+
+```
+jupyter notebook --ip="*" --allow-root --no-browser --NotebookApp.token=
+```
