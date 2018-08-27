@@ -12,7 +12,7 @@ RUN apt update && apt install -y wget \
    && ./Miniconda3-latest-Linux-x86_64.sh -p /opt/miniconda3 -b \
    && rm -rf Miniconda3-latest-Linux-x86_64.sh \
    && conda install jupyter -y \
-   && conda install jupyter_dashboards -c conda-forge -y \
+   && conda upgrade --all -y \
    && conda clean --all -y
 
 EXPOSE 8888
