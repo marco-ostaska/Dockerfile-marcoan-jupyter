@@ -11,15 +11,15 @@
 ###### Starting jupyter notebook without Password or Token
 
 ```
-docker run -p 8888:8888 -v $(pwd):/jupyter_files marcoan/jupyter-dashboard jupyter notebook --ip="*" --allow-root --no-browser --NotebookApp.token=
+docker run -p 8888:8888 -v $(pwd):/jupyter_files marcoan/jupyter jupyter notebook --ip="*" --allow-root --no-browser --NotebookApp.token=
 ```
 
 ###### Starting jupyter notebook with jupyter generated token
 ```
-docker run -p 8888:8888 -v $(pwd):/jupyter_files marcoan/jupyter-dashboard jupyter notebook --ip="*" --allow-root --no-browser
+docker run -p 8888:8888 -v $(pwd):/jupyter_files marcoan/jupyter jupyter notebook --ip="*" --allow-root --no-browser
 ```
 
 ###### Starting jupyter notebook with self generated token
 ```
-docker run -p 8888:8888 -v $(pwd):/jupyter_files marcoan/jupyter-dashboard jupyter notebook --ip="*" --allow-root --no-browser --NotebookApp.token=<yourtoken>
+docker run -p 8888:8888 -v $(pwd):/jupyter_files marcoan/jupyter jupyter notebook --ip="*" --allow-root --no-browser --NotebookApp.token=<yourtoken>
 ```
